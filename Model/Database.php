@@ -3,23 +3,47 @@
 class Database
 {
     private $servername = 'localhost';
-    private $username = 'admin';
+    private $username = 'root';
     private $password = '';
-    
-    function get_servername(){return $this->servername;}
-    function get_username(){return $this->username;}
-    function get_password(){return $this->password;}
+    private $connection;
 
-    function connect()
-    {
-        $conn = new mysqli(get_servername(), get_username(), get_password());
-        if ($conn->connect_error)
+    function __construct()
+    {    
+        try 
         {
-            die("Connection failed: " . $conn->connect_error);
+            $this->connection = new PDO("mysql:host=$this->servername;dbname=webchat", $this->username, $this->password);
+            // set the PDO error mode to exception
+            $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
-        echo "Connected successfully";
+        catch(PDOException $e) 
+        {
+            echo "Connection failed: " . $e->getMessage();
+        }
+    }
+
+    function executeQuerry($querry)
+    {
+       $this->connection->prepare($querry);
+       echo("wsh");
+    }
+
+    function getAllUsers()
+    {
+        return ($this->executeQuerry("SELECT * FROM users;"));
+    }
+
+    function getAllChannels()
+    {
+        return ($this->executeQuerry("SELECT * FROM channels;"));
+    }
+
+    function getAllUsersInChannels()
+    {
+        return ($this->executeQuerry("SELECT * FROM channels_users;"));
     }
 }
 
 $database = new Database();
-$database->connect();
+$database->getAllUsers();
+$database->getAllChannels();
+$database->getAllUsersInChannels();
