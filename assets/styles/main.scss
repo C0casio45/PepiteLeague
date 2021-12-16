@@ -81,7 +81,7 @@ body {
           margin-left: 20px;
         }
 
-        img:hover{
+        img:hover {
           cursor: pointer;
         }
 
@@ -94,6 +94,53 @@ body {
 
         input:focus {
           outline: none;
+        }
+      }
+
+      .menu-items {
+        .links {
+          margin-left: 20px;
+          list-style: none;
+          .link {
+            margin-top: 16px;
+            
+            a {
+              text-decoration: none;
+
+              div {
+                display: flex;
+
+                align-items: center;
+
+                .icon {
+                  
+                  background-color: $button;
+                  width: 42px;
+                  height: 42px;
+                  border-radius: 5px;
+                  
+                  p{
+                    color: $input;
+                    width: 100%;
+                    text-align: center;
+                    margin: auto;
+                  }
+                }
+
+                p {
+                  color: $fontColor;
+                  margin: 16px;
+                  font-family: Roboto;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 19px;
+                  letter-spacing: 0em;
+                  text-align: left;
+                }
+              }
+            }
+          }
         }
       }
     }

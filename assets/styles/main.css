@@ -104,6 +104,54 @@ body {
   outline: none;
 }
 
+.container .sidebar .menu .menu-items .links {
+  margin-left: 20px;
+  list-style: none;
+}
+
+.container .sidebar .menu .menu-items .links .link {
+  margin-top: 16px;
+}
+
+.container .sidebar .menu .menu-items .links .link a {
+  text-decoration: none;
+}
+
+.container .sidebar .menu .menu-items .links .link a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .sidebar .menu .menu-items .links .link a div .icon {
+  background-color: #258cf4;
+  width: 42px;
+  height: 42px;
+  border-radius: 5px;
+}
+
+.container .sidebar .menu .menu-items .links .link a div .icon p {
+  color: #eeeeee;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.container .sidebar .menu .menu-items .links .link a div p {
+  color: #000000;
+  margin: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
 .navbar {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
