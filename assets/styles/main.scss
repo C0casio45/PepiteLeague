@@ -34,7 +34,7 @@ body {
     grid-area: sidebar;
     background-color: $card;
     height: 100vh;
-    border-left: 1px solid #D5E3EC;
+    border-left: 1px solid #d5e3ec;
 
     .header {
       height: 60px;
@@ -42,7 +42,6 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      
 
       .title {
         font-size: 15px;
@@ -52,21 +51,21 @@ body {
         margin-left: 20px;
       }
 
-      a{
-        margin-right:20px;
+      a {
+        margin-right: 20px;
       }
     }
 
-    .line{
+    .line {
       height: 1px;
       width: 100%;
-      background-color: #D5E3EC;
+      background-color: #d5e3ec;
     }
 
-    .menu{
+    .menu {
       margin-top: 16px;
 
-      .searchbar{
+      .searchbar {
         display: flex;
         align-items: center;
         margin: 0 20px;
@@ -78,17 +77,22 @@ body {
 
         border-radius: 10px;
 
-        img{
+        img {
           margin-left: 20px;
         }
 
-        input{
-          background-color: $input;
-          border: none;
-          text-indent: 10px;
+        img:hover{
+          cursor: pointer;
         }
 
-        input:focus{
+        input {
+          background-color: transparent;
+          border: none;
+          text-indent: 10px;
+          width: calc(20vw - 40px);
+        }
+
+        input:focus {
           outline: none;
         }
       }

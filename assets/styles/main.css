@@ -32,7 +32,7 @@ body {
   grid-area: sidebar;
   background-color: #ffffff;
   height: 100vh;
-  border-left: 1px solid #D5E3EC;
+  border-left: 1px solid #d5e3ec;
 }
 
 .container .sidebar .header {
@@ -64,7 +64,7 @@ body {
 .container .sidebar .line {
   height: 1px;
   width: 100%;
-  background-color: #D5E3EC;
+  background-color: #d5e3ec;
 }
 
 .container .sidebar .menu {
@@ -89,10 +89,15 @@ body {
   margin-left: 20px;
 }
 
+.container .sidebar .menu .searchbar img:hover {
+  cursor: pointer;
+}
+
 .container .sidebar .menu .searchbar input {
-  background-color: #eeeeee;
+  background-color: transparent;
   border: none;
   text-indent: 10px;
+  width: calc(20vw - 40px);
 }
 
 .container .sidebar .menu .searchbar input:focus {
