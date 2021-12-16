@@ -1,0 +1,114 @@
+/* COLORS */
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 20vw 1fr;
+      grid-template-columns: 20vw 1fr;
+  -ms-grid-rows: 60px 1fr;
+      grid-template-rows: 60px 1fr;
+      grid-template-areas: "sidebar navbar" "sidebar section";
+}
+
+.container .sidebar {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
+  background-color: #ffffff;
+  height: 100vh;
+  border-left: 1px solid #D5E3EC;
+}
+
+.container .sidebar .header {
+  height: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .sidebar .header .title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  margin-left: 20px;
+}
+
+.container .sidebar .header a {
+  margin-right: 20px;
+}
+
+.container .sidebar .line {
+  height: 1px;
+  width: 100%;
+  background-color: #D5E3EC;
+}
+
+.container .sidebar .menu {
+  margin-top: 16px;
+}
+
+.container .sidebar .menu .searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px;
+  width: calc(20vw - 40px);
+  background-color: #eeeeee;
+  height: 48px;
+  border-radius: 10px;
+}
+
+.container .sidebar .menu .searchbar img {
+  margin-left: 20px;
+}
+
+.container .sidebar .menu .searchbar input {
+  background-color: #eeeeee;
+  border: none;
+  text-indent: 10px;
+}
+
+.container .sidebar .menu .searchbar input:focus {
+  outline: none;
+}
+
+.navbar {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: navbar;
+  background-color: #ffffff;
+}
+
+.section {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: section;
+}
+/*# sourceMappingURL=main.css.map */
