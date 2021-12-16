@@ -42,8 +42,3 @@ class Database
         return ($this->executeQuerry("SELECT * FROM channels_users;"));
     }
 }
-
-$database = new Database();
-$database->getAllUsers();
-$database->getAllChannels();
-$database->getAllUsersInChannels();
