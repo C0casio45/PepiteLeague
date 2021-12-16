@@ -41,8 +41,8 @@ class Database
 
     function getUserFromMail($mail)
     {
-        $querry = $this->connection->prepare('SELECT * FROM users WHERE email  = mail');
-        $querry->bind_param("s", $mail);
+        $querry = $this->connection->prepare('SELECT * FROM users WHERE email = :email');
+        $querry->bind_param(":email", $mail);
         $querry->execute();
     }
 }
