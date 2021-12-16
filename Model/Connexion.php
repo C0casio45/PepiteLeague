@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'Database.php';
 if(isset($_POST['submit'])){
     
@@ -12,7 +13,7 @@ if(isset($_POST['submit'])){
         $query->bindParam(':mail',$_POST['email'],PDO::PARAM_STR, 45);
         $query->execute();
 
-        echo resultRqt($query,$mdp,$db);
+        echo resultRqt($query,$mdp);
     }
     catch (PDOException $e)
     {
@@ -23,20 +24,19 @@ if(isset($_POST['submit'])){
 
 
 
-function resultRqt($q,$m,$db){
+function resultRqt($q,$m){
     //If there is a reslut, we can go further into the connection
     if ($q->rowCount() > 0) {
         foreach($q as $row){
             //Verify the password
             if(password_verify($m,$row['password']) == 1){
                 //If password is ok, then sore all informations
-                $id = $row['idUsers'];
-                $firstname = $row['firstname'];
-                $lastname = $row['lastname'];
-                $email = $row['email'];
-                $password = $row['password'];
-                $updated_at = $row['updated_at'];
-                $created_at = $row['created_at'];
+                $_SESSION['id'] = $row['id'];
+                $_SESSION['$firstname'] = $row['firstname'];
+                $_SESSION['$lastname'] = $row['lastname'];
+                $_SESSION['$email'] = $row['email'];
+                $_SESSION['$updated_at'] = $row['updated_at'];
+                $_SESSION['$created_at'] = $row['created_at'];
                 $q->closeCursor();
 
                 echo "{'auth'='succeed'}";
