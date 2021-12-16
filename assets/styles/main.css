@@ -266,7 +266,7 @@ body {
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
-  width: 100%;
+  width: 70vw;
   height: 60px;
   margin: 21px 63px;
 }
@@ -349,6 +349,45 @@ body {
   line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.section .sendbar {
+  width: 70vw;
+  height: 40px;
+  background-color: #eeeeee;
+  position: absolute;
+  bottom: 32px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .sendbar input {
+  border: none;
+  background-color: transparent;
+  width: 70vw;
+  height: 40px;
+  text-indent: 16px;
+}
+
+.section .sendbar input:focus {
+  outline: none;
+}
+
+.section .sendbar .send {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: #258cf4;
+  background-image: url(/assets/images/send.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .imageProfil {

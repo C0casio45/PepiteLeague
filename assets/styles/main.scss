@@ -236,7 +236,7 @@ body {
     line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
-    width: 100%;
+    width: 70vw;
     height: 60px;
     margin: 21px 63px;
   }
@@ -295,6 +295,43 @@ body {
         letter-spacing: 0em;
         text-align: left;
       }
+    }
+  }
+
+  .sendbar {
+    width: 70vw;
+    height: 40px;
+    background-color: #eeeeee;
+
+    position: absolute;
+    bottom: 32px;
+
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    input {
+      border: none;
+      background-color: transparent;
+      width: 70vw;
+      height: 40px;
+      text-indent: 16px;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    .send {
+      height: 30px;
+      width: 30px;
+      border-radius: 5px;
+      background-color: $button;
+      background-image: url(/assets/images/send.svg);
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 }
