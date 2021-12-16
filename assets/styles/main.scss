@@ -175,7 +175,7 @@ body {
         }
       }
 
-      .deco{
+      .deco {
         display: flex;
         align-items: center;
         height: 33px;
@@ -190,9 +190,8 @@ body {
           line-height: 16px;
           letter-spacing: 0em;
           text-align: left;
-          color:#FF394A;
+          color: #ff394a;
           margin-left: 40px;
-          
         }
       }
     }
@@ -207,14 +206,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        .imageProfil {
-          border-radius: 100%;
-          width: 60px;
-          height: 60px;
-          background-size: cover;
-          background-image: url(/assets/images/head.jpg);
-        }
 
         .name {
           font-size: 18px;
@@ -237,7 +228,81 @@ body {
 .navbar {
   grid-area: navbar;
   background-color: $card;
+
+  .header {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+    height: 60px;
+    margin: 21px 63px;
+  }
 }
 .section {
   grid-area: section;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .messages {
+    margin: 40px 0;
+    width: 70vw;
+    height: auto;
+
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 16px;
+
+        .name {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+
+        .date {
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 14px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+    }
+
+    .body {
+      margin-top: 5px;
+      margin-left: 75px;
+      .message {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.imageProfil {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-image: url(/assets/images/head.jpg);
 }
