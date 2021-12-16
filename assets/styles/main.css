@@ -61,12 +61,6 @@ body {
   margin-right: 20px;
 }
 
-.container .sidebar .line {
-  height: 1px;
-  width: 100%;
-  background-color: #d5e3ec;
-}
-
 .container .sidebar .menu {
   margin-top: 16px;
 }
@@ -150,6 +144,49 @@ body {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.container .sidebar .profil--container {
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 20vw;
+}
+
+.container .sidebar .profil--container .profil {
+  margin: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .sidebar .profil--container .profil .imageProfil {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-image: url(/assets/images/head.jpg);
+}
+
+.container .sidebar .profil--container .profil .name {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #d5e3ec;
 }
 
 .navbar {

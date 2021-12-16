@@ -56,12 +56,6 @@ body {
       }
     }
 
-    .line {
-      height: 1px;
-      width: 100%;
-      background-color: #d5e3ec;
-    }
-
     .menu {
       margin-top: 16px;
 
@@ -103,7 +97,7 @@ body {
           list-style: none;
           .link {
             margin-top: 16px;
-            
+
             a {
               text-decoration: none;
 
@@ -113,13 +107,12 @@ body {
                 align-items: center;
 
                 .icon {
-                  
                   background-color: $button;
                   width: 42px;
                   height: 42px;
                   border-radius: 5px;
-                  
-                  p{
+
+                  p {
                     color: $input;
                     width: 100%;
                     text-align: center;
@@ -144,7 +137,42 @@ body {
         }
       }
     }
+
+    .profil--container {
+      position: absolute;
+      bottom: 0;
+      height: 80px;
+      width: 20vw;
+      .profil {
+        margin: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .imageProfil {
+          border-radius: 100%;
+          width: 60px;
+          height: 60px;
+          background-size: cover;
+          background-image: url(/assets/images/head.jpg);
+        }
+
+        .name {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+    }
   }
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #d5e3ec;
 }
 
 .navbar {
