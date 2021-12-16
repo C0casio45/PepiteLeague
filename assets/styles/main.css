@@ -146,6 +146,74 @@ body {
   text-align: left;
 }
 
+.container .sidebar .popupdeco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99;
+  position: absolute;
+  height: 122px;
+  width: 200px;
+  border-radius: 12px;
+  background: #f5f8fa;
+  left: 134px;
+  bottom: 70px;
+}
+
+.container .sidebar .popupdeco .member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 33px;
+  width: 184px;
+  border-radius: 10px;
+  background: #8282821a;
+  margin: 16px 8px;
+}
+
+.container .sidebar .popupdeco .member p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.container .sidebar .popupdeco .deco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 33px;
+  width: 184px;
+}
+
+.container .sidebar .popupdeco .deco p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FF394A;
+}
+
 .container .sidebar .profil--container {
   position: absolute;
   bottom: 0;

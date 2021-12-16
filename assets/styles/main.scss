@@ -138,6 +138,61 @@ body {
       }
     }
 
+    .popupdeco {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      z-index: 99;
+      position: absolute;
+      height: 122px;
+      width: 200px;
+      border-radius: 12px;
+      background: #f5f8fa;
+
+      left: 134px;
+      bottom: 70px;
+
+      .member {
+        display: flex;
+        align-items: center;
+        height: 33px;
+        width: 184px;
+        border-radius: 10px;
+        background: #8282821a;
+
+        margin: 16px 8px;
+
+        p {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+
+      .deco{
+        display: flex;
+        align-items: center;
+        height: 33px;
+        width: 184px;
+
+        p {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0em;
+          text-align: left;
+          color:#FF394A;
+          ;
+        }
+      }
+    }
+
     .profil--container {
       position: absolute;
       bottom: 0;
