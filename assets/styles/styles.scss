@@ -26,7 +26,7 @@ body {
   left: calc(50vw - 424px/2);
   top: calc(50vh - 439px/2);
   background-color: $card;
-  height: 439px;
+  height: auto;
   width: 424px;
 
   border-radius: 5px;
@@ -68,6 +68,7 @@ body {
   p {
     text-align: center;
     color: $fontColor;
+    padding-bottom: 16px;
 
     a {
       color: $fontColor;
