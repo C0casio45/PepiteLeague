@@ -21,24 +21,31 @@ class Database
         }
     }
 
-    function executeQuerry($querry)
-    {
-       $this->connection->prepare($querry);
-       echo("wsh");
-    }
-
     function getAllUsers()
     {
-        return ($this->executeQuerry("SELECT * FROM users;"));
+        $querry = $this->connection->prepare("SELECT * FROM users;");
+        $querry->execute();
     }
 
     function getAllChannels()
     {
-        return ($this->executeQuerry("SELECT * FROM channels;"));
+        $querry = $this->connection->prepare("SELECT * FROM channels;");
+        $querry->execute();
     }
 
     function getAllUsersInChannels()
     {
-        return ($this->executeQuerry("SELECT * FROM channels_users;"));
+        $querry = $this->connection->prepare("SELECT * FROM channels_users;");
+        $querry->execute();
+    }
+
+    function getUserFromMail($mail)
+    {
+        $querry = $this->connection->prepare('SELECT * FROM users WHERE email = :email');
+        $querry->bindParam(":email", $mail);
+        $querry->execute();
     }
 }
+
+$database = new Database;
+$database->getAllUsers();
