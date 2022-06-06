@@ -1,0 +1,27 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+
+    <link rel="stylesheet" href="../assets/styles/Inscription.css" />
+  </head>
+  <body>
+    <div class="login--container">
+        <h1 class="title">
+            S'inscrire
+        </h1>
+        <form method="POST" action="../Models/Inscription.php">
+            <input type="text" name="lastname" id="nom" placeholder="Nom">
+            <input type="text" name="firstname" id="prenom" placeholder="Prénom">
+            <input type="email" name="email" id="mail" placeholder="Email">
+            <input type="password" name="password" id="password" placeholder="Mot de passe">
+        
+            <button type="submit">S'inscrire</button>
+        </form>
+
+        <p>Vous êtes déjà inscrit ? <a href="./signUp-page.html">Se connecter</a></p>
+    </div>
+  </body>
+</html>
